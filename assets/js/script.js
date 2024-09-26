@@ -24,14 +24,14 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal('.home-text',{delay:300});
-sr.reveal('.home-img',{delay:400});
-sr.reveal('.container',{delay:400});
+sr.reveal('.home-text',{delay:200});
+sr.reveal('.home-img',{delay:300});
+sr.reveal('.container',{delay:200});
 
 sr.reveal('.about-img',{});
-sr.reveal('.about-text',{delay:300});
+sr.reveal('.about-text',{delay:200});
 
 sr.reveal('.middle-text',{});
-sr.reveal('.row-btn, .menu-content',{delay:300});
+sr.reveal('.row-btn, .menu-content',{delay:200});
 
-sr.reveal('.review-content, .contact',{delay:300});
+sr.reveal('.review-content, .contact',{delay:200});
