@@ -236,9 +236,9 @@ span{
     justify-content: center;
     gap: 3rem;
     margin-top: 2rem;
-    transition: all 0.50s ease;
-}
+    padding-bottom: 1rem;
 
+}
 .menu-content > * {
     flex: 1 1 20.75rem; 
     max-width: 20.75rem; 
@@ -247,77 +247,48 @@ span{
     box-shadow: 2px 2px 8px 0 var(--main-color), 
                 4px 4px 16px 0 #d66, 
                 0px 0px 24px 2px var(--main-color);
-    overflow: hidden; 
+    overflow: hidden;
+
 }
 
 .row {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background: var(--other-color);
     border-radius: 3rem;
     overflow: hidden;
-    cursor: pointer;
+    padding: 1rem;
+
+
 }
 
-.row::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); 
-    opacity: 0;
-    transition: opacity .50s ease;
-}
 
 .row img {
     width: 100%;
-    height: 100%;
-    transition: transform .50s ease, filter .50s ease;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 3rem;
+    margin-bottom: 0.5rem;
+
 }
 
-.row img.blurred {
-    filter: blur(1rem);
-    opacity: 0.3; /* Ajusta la opacidad de la imagen */
-}
-
-
-
-.text-content {
-    position: absolute;
-    top: 0; 
-    left: 50%;
-    transform: translate(-50%, 0); 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    height: 100%; 
+.text-content h3{
+    font-size: 1.6rem;
+    color: var(--main-color);
     text-align: center;
-    color: var(--text-color);
-    opacity: 0;
-    transition: opacity .50s ease;
 }
 
-.text-content.visible {
-    opacity: 1;
+.text-content p{
+    color: var(--second-color);
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
-.text-content h3 {
-    margin-top: 2rem; 
-    color: var(--main-color);
-    font-size: var(--font-size-generalM);
-}
-
-.text-content p {
-    margin: auto 0; 
-    color: var(--text-color);
-    font-size: var(--p-font);
-}
-
-.text-content h6 {
-    margin-bottom: 3rem; 
-    color: var(--main-color);
+.text-content h6{
     font-size: 1.2rem;
+    color: var(--main-color);
+    text-align: center;
 }
 
 .row-btn{
