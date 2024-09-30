@@ -480,11 +480,9 @@ footer {
 .contact-horizontal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: space-between;
-    align-items: start;
-    text-align: center;
-    gap: 1.3rem;
-    margin: 0;
+    align-items: center;
+    text-align: justify;
+    margin: 0 100px;
     padding: 1rem;
 }
 

@@ -35,13 +35,3 @@ sr.reveal('.middle-text',{});
 sr.reveal('.row-btn, .menu-content',{delay:50});
 
 sr.reveal('.review-content, .contact',{delay:50});
-
-document.querySelectorAll('.row').forEach(row => {
-    row.addEventListener('click', () => {
-        const img = row.querySelector('img');
-        const textContent = row.querySelector('.text-content');
-        
-        img.classList.toggle('blurred');
-        textContent.classList.toggle('visible');
-    });
-});

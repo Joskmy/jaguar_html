@@ -136,17 +136,35 @@ header.sticky{
 /*home*/
 
 /*filtro*/
+
 .selector-items{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 1rem 1rem; 
+}
+.color-filter{
+    background-color: #252525;
+    padding: 1rem;
+}
+.text-filter{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.buttons-filter{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
-    padding: 8rem 1rem 1rem; 
     gap: 1rem;
+    justify-content: space-evenly;
+
 }
 
-.selector-items button{
+.buttons-filter button{
     display: inline-block;
+    min-width: 200px;
     background: var(--other-color);
     padding: 15px 35px;
     color: var(--main-color);
@@ -155,23 +173,34 @@ header.sticky{
     letter-spacing: 1px;
     border-radius: 3rem;
     transform: all .50s ease;
+    cursor: pointer;
 
 }
 
+.buttons-filter button.active{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: var(--main-color) 0px 1px 25px;
+}
 
-.selector-items i{
+.buttons-filter i{
     vertical-align: middle;
     margin-left: 9px;
     font-size: 22px;
 }
 
-.selector-items button:hover{
+.buttons-filter button:hover{
     background: var(--main-color);
     color: var(--bg-color);
     box-shadow: var(--main-color) 0px 1px 25px;
 }
 
 /*Cuadros*/
+.card.hidden{
+    display: none;
+
+}
+
 .middle-text{
     margin: 1rem 2rem 0;
     display: flex;
@@ -262,9 +291,6 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.9rem;
-    align-items: start;
-    align-items: center;
-    text-align: justify;
 }
 
 .Feroces ul{
@@ -287,6 +313,49 @@ header.sticky{
     margin-bottom: 1rem;
 }
 
+
+/*Compartir*/
+.Compartir, .Junior h3{
+    margin-bottom: 1rem;
+}
+
+.Compartir h6{
+    color: var(--text-color);
+}
+
+.Compartir span{
+    color: var(--main-color);
+}
+
+/*Junior*/
+.Junior h6{
+    margin-top: 2rem;
+}
+
+/*Adiciones*/
+.menu-item {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 6px dotted var(--other-color);
+}
+.menu-item p{
+    color: var(--main-color);
+}
+
+.menu-item span {
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+.price-color{
+    color: var(--main-color);
+}
+
+.final{
+    margin-bottom: 0.6rem;
+}
 
 /*footer*/
 
@@ -450,6 +519,20 @@ footer {
         --h2-font: 2rem;  
     }
 
+}
+
+@media (max-width: 600px) {
+    .navlist a {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    .contact-horizontal {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .buttons-filter button {
+        min-width: 150px; /* Ajusta el tamaño de los botones */
+    }
 }
 
 

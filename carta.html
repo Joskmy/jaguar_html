@@ -28,347 +28,415 @@
      </header>
      <!-- inicio -->
      <section class="selector-items">
-        <button data-name="Entradas">Entradas</button>
-        <button data-name="Feroces">Los Feroces</button>
-        <button data-name="Fuertes">Platos Fuertes</button>
-        <button data-name="Hamburguesas">Hamburguesas</button>
-        <button data-name="Compartir">Para Compartir</button>
-        <button data-name="Licores">Cocteles y Licores</button>
-        <button data-name="Bebidas">Bebidas</button>
-        <button data-name="Postres">Postres</button>
-        <button data-name="Adiciones">Adiciones</button>
+        <div class="color-filter">
+            <div class="text-filter">
+                <h3>Filtra y descubre tus nuevas delicias favoritas</h3>
+            </div>
+            <div class="buttons-filter">
+                <button class="active" data-name="All">Todo</button>
+                <button data-name="Entradas">Entradas</button>
+                <button data-name="Feroces">Los Feroces</button>
+                <button data-name="Fuertes">Platos Fuertes</button>
+                <button data-name="Hamburguesas">Hamburguesas</button>
+                <button data-name="Compartir">Para Compartir</button>
+                <button data-name="Junior">Junior</button>
+                <button data-name="Adiciones">Adiciones</button>
+            </div>
+        </div>
      </section>
      <!-- Entradas -->
-     <section class="Entradas" data-name="Entradas">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
+     <section class="content">
+        <section class="card Entradas" data-name="Entradas">
+            <div class="middle-text">
+                <h2>Entradas</h2>
+                <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
+            </div>
 
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
+                    <div class="text-content">
+                        <h3>Chorizo Santarrosano</h3>
+                        <p>Disfruta del mejor chorizo 
+                            santarrosano en trozos, 
+                            acompañado de limón y 
+                            arepa de mote frita.</p>
+                        <h6>$15.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Queso Ahumado">
+                    <div class="text-content">
+                        <h3>Queso Ahumado</h3>
+                        <p>Delicioso queso papialpa
+                            ahumado a la parrilla , con
+                            piña asada en chimichurri,
+                            para un contraste de sabores.</p>
+                        <h6>$15.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Patatas Bravas">
+                    <div class="text-content">
+                        <h3>Patatas Bravas</h3>
+                        <p>Papas fritas cortadas en cubos cubiertas 
+                            con salsa brava, y hojas finas de cilantro. 
+                            Ideal para los amantes del picante.</p>
+                        <h6>$15.000</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feroces -->
+        <section class="card Feroces" data-name="Feroces">
+            <div class="middle-text">
+                <h2>Los Feroces</h2>
+                <div class="middle-text-2">
+                    <div class="armar-plato">
+                        <p>Arma tu <span>plato Feroz</span> eligiendo <span>2</span> proteinas.<br>Si aún no te decides, entonces selecciona 2 de tus proteínas favoritas:</p>  
+                        <ul>
+                            <li>- Churrasco.</li>
+                            <li>- Medallón de cerdo.</li>
+                            <li>- Filete de pollo.</li>
+                            <li>- Costilla.</li>
+                        </ul>
+                    </div>
+                    <div class="information-general">
+                        <h2>¿Quieres más?</h2>
+                            <p><span>Adiciona</span> más proteínas a tu plato FEROZ o agranda 
+                            tu chorizo santarrosano 
+                            por <span>$8.000 c/u.</span></p>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Queso Ahumado">
-                <div class="text-content">
-                    <h3>Queso Ahumado</h3>
-                    <p>Delicioso queso papialpa
-                        ahumado a la parrilla , con
-                        piña asada en chimichurri,
-                        para un contraste de sabores.</p>
-                    <h6>$15.000</h6>
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/plato feroz.jpg" alt="Plato combinado de carne de res, cerdo o pollo">
+                    <div class="text-content">
+                        <h3>Plato Feroz</h3>
+                        <p>Disfruta de nuestros platos FEROCES, acompañados de un delicioso Chorizo Santarrosano
+                            pequeño, guarnición y una fresca ensalada. 
+                            ¡Una explosión de sabores que no te puedes perder!</p>
+                        <h6>$35.000</h6>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <!-- Fuertes -->
+        <section class="card Fuertes" data-name="Fuertes">
+            <div class="middle-text">
+                <h2>Platos Fuertes</h2>
+                <p>Todos nuestros platos fuertes 
+                    vienen acompañados con:</p>  
+                <ul>
+                    <li class="salad"><span>Ensalada:</span><br>
+                        Mix de lechugas con tomates cherry,
+                        un topping crocante, aderezada con 
+                        una mezcla de vinagre balsámico y miel</li>
+                    <li><span>Selecciona tu guarnición favorita:</span>
+                        <li>- Papas fritas artesanales.</li>
+                        <li>- Papa cocida con sour cream.</li>
+                        <li>- Yuquitas fritas.</li>
+                </li>
+                </ul>
             </div>
 
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Patatas Bravas">
-                <div class="text-content">
-                    <h3>Patatas Bravas</h3>
-                    <p>Papas fritas cortadas en cubos cubiertas 
-                        con salsa brava, y hojas finas de cilantro. 
-                        Ideal para los amantes del picante.</p>
-                    <h6>$15.000</h6>
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Solomito">
+                    <div class="text-content">
+                        <h3>Solomito</h3>
+                        <p>2 jugosos y suaves medallones 
+                            de 125 gr. cada uno.</p>
+                        <h6>$35.0000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Punta de Anca">
+                    <div class="text-content">
+                        <h3>Punta de Anca</h3>
+                        <p>250 gr. de Punta de Anca 
+                            en corte mariposa.</p>
+                        <h6>$29.500</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Churrasco">
+                    <div class="text-content">
+                        <h3>Churrasco</h3>
+                        <p>250 gr. de Chata en corte 
+                            mariposa.</p>
+                        <h6>$28.500</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Malevo">
+                    <div class="text-content">
+                        <h3>Malevo</h3>
+                        <p>300 gr. de un corte grueso de 
+                            la punta de la Punta de Anca.</p>
+                        <h6>$34.500</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Medallones de cerdo en salsa Jaguar">
+                    <div class="text-content">
+                        <h3>Medallones de cerdo en salsa Jaguar</h3>
+                        <p>2 medallones de cerdo 125 gr. c/u, 
+                            bañados con salsa de uchuvas y
+                            romero. Picante opcional.</p>
+                        <h6>$29.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Punta de anca de cerdo">
+                    <div class="text-content">
+                        <h3>Punta de anca de cerdo</h3>
+                        <p>230 gr. de corte mariposa de una 
+                            suave punta de anca de cerdo.</p>
+                        <h6>$24.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Costichí">
+                    <div class="text-content">
+                        <h3>Costichí</h3>
+                        <p>250 gr. de corte especial 
+                            de costilla y chicharrón.</p>
+                        <h6>$24.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Chuzo de pollo o cerdo">
+                    <div class="text-content">
+                        <h3>Chuzo de pollo o cerdo</h3>
+                        <p>160 gr. de pollo o cerdo; 
+                            elige tu favorito.</p>
+                        <h6>$18.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Filete de pollo ">
+                    <div class="text-content">
+                        <h3>Filete de pollo </h3>
+                        <p>250 gr. de un suave filete de 
+                            pechuga de pollo.</p>
+                        <h6>$22.000</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Salmón">
+                    <div class="text-content">
+                        <h3>Salmón</h3>
+                        <p>Delicioso filete de salmón a la 
+                            parrilla.</p>
+                        <h6>$40.000</h6>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Hamburguesas -->
+        <section class="card Hamburguesas" data-name="Hamburguesas">
+            <div class="middle-text">
+                <h2>Hamburguesas</h2>
+                <p>Pide tus papas 
+                    francesas para 
+                    acompañar tu 
+                    hamburguesa 
+                    por solo
+                    <span>$4.000</span>
+                    </p>  
+            </div>
+
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa Clásica de Res">
+                    <div class="text-content">
+                        <h3>Clásica Res</h3>
+                        <p>Disfruta de nuestra carne artesanal 
+                            de 150 gr. en  un pan orégano 
+                            parmesano; acompañado de queso, 
+                            tocineta, lechuga y tomate.</p>
+                        <h6>$23.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa Jaguar">
+                    <div class="text-content">
+                        <h3>Hamburguesa Jaguar</h3>
+                        <p>Doble disfrute de nuestra carne 
+                            artesanal con 300 gr.  en pan 
+                            orégano parmesano; 
+                            acompañado de queso, tocineta, 
+                            lechuga y tomate.</p>
+                        <h6>$29.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa Cerdo">
+                    <div class="text-content">
+                        <h3>Hamburguesa Cerdo</h3>
+                        <p>Medallones de cerdo en pan 
+                            orégano parmesano; 
+                            acompañado de queso, tocineta, 
+                            lechuga y tomate.</p>
+                        <h6>$25.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa Pollo">
+                    <div class="text-content">
+                        <h3>Hamburguesa Pollo</h3>
+                        <p>Suave filete de pollo en pan 
+                            orégano parmesano; 
+                            acompañado de queso, tocineta, 
+                            lechuga y tomate.</p>
+                        <h6>$25.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa Mixta">
+                    <div class="text-content">
+                        <h3>Hamburguesa Mixta</h3>
+                        <p>Elige tu combinación favorita entre 
+                            res, cerdo y pollo. (2 proteínas).</p>
+                        <h6>$28.000</h6>
+                    </div>
                 </div>
             </div>
-        </div>
-     </section>
-     <!-- Feroces -->
-     <section class="Feroces" data-name="Feroces">
-        <div class="middle-text">
-            <h2>Los Feroces</h2>
-            <div class="middle-text-2">
-                <div class="armar-plato">
-                    <p>Arma tu <span>plato Feroz</span> eligiendo <span>2</span> proteinas.<br>Si aún no te decides, entonces selecciona 2 de tus proteínas favoritas:</p>  
+        </section>
+        <!-- Compartir -->
+        <section class="card Compartir" data-name="Compartir">
+            <div class="middle-text">
+                <h2>Para compartir</h2>
+                <p>Comparte el sabor, pide nuestras picadas y disfruta con amigos. <br>
+                    Una mezcla de nuestras carnes para 
+                    disfrutar y compartir:
                     <ul>
-                        <li>- Churrasco.</li>
-                        <li>- Medallón de cerdo.</li>
-                        <li>- Filete de pollo.</li>
-                        <li>- Costilla.</li>
-                    </ul>
-                </div>
-                <div class="information-general">
-                    <h2>¿Quieres más?</h2>
-                         <p><span>Adiciona</span> más proteínas a tu plato FEROZ o agranda 
-                        tu chorizo santarrosano 
-                        por <span>$8.000 c/u.</span></p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/plato feroz.jpg" alt="Plato combinado de carne de res, cerdo o pollo">
-                <div class="text-content">
-                    <h3>Plato Feroz</h3>
-                    <p>Disfruta de nuestros platos FEROCES, acompañados de un delicioso Chorizo Santarrosano
-                         pequeño, guarnición y una fresca ensalada. 
-                         ¡Una explosión de sabores que no te puedes perder!</p>
-                    <h6>$35.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Fuertes -->
-     <section class="Fuertes" data-name="Fuertes">
-        <div class="middle-text">
-            <h2>Platos Fuertes</h2>
-            <p>Todos nuestros platos fuertes 
-                vienen acompañados con:</p>  
-            <ul>
-                <li class="salad"><span>Ensalada:</span><br>
-                    Mix de lechugas con tomates cherry,
-                    un topping crocante, aderezada con 
-                    una mezcla de vinagre balsámico y miel</li>
-                <li><span>Selecciona tu guarnición favorita:</span>
-                    <li>- Papas fritas artesanales.</li>
-                    <li>- Papa cocida con sour cream.</li>
-                    <li>- Yuquitas fritas.</li>
-            </li>
-            </ul>
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Solomito">
-                <div class="text-content">
-                    <h3>Solomito</h3>
-                    <p>2 jugosos y suaves medallones 
-                        de 125 gr. cada uno.</p>
-                    <h6>$35.0000</h6>
-                </div>
+                        <li>- Chorizo santarrosano</li>
+                        <li>- Filete de pollo</li>
+                        <li>- Churrasco</li>
+                        <li>- Costichí y costillas</li>
+                        <li>- Acompañado de papas a la francesa</li>
+                        <li>- Arepa de mote frita</li>
+                        <li>- Ensalada</li>
+                    </ul>     
+                </p>  
             </div>
 
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Punta de Anca">
-                <div class="text-content">
-                    <h3>Punta de Anca</h3>
-                    <p>250 gr. de Punta de Anca 
-                        en corte mariposa.</p>
-                    <h6>$29.500</h6>
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Picada Jaguar">
+                    <div class="text-content">
+                        <h3>Picada Jaguar</h3>
+                        <h6>Picada para 2: <span>$55.000</span></h6>
+                        <h6>Picada para 4: <span>$105.000</span></h6>
+                    </div>
                 </div>
             </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Churrasco">
-                <div class="text-content">
-                    <h3>Churrasco</h3>
-                    <p>250 gr. de Chata en corte 
-                        mariposa.</p>
-                    <h6>$28.500</h6>
-                </div>
+        </section>
+        <!-- Junior -->
+        <section class="card Junior" data-name="Junior">
+            <div class="middle-text">
+                <h2>Junior</h2>
+                <p>¡Platos Junior, grandes sonrisas! Perfectos para los más pequeños.</p>
+                <p>Tenemos 3 opciones diferentes para que los más queñeros disfruten por tan solo <span>$22.000</span>:</p>
+                <ul>
+                    <li>- Hamburguesa mini.</li>
+                    <li>- Filete de pollo junior con papas.</li>
+                    <li>- Salchipapas.</li>
+                </ul> 
             </div>
 
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Malevo">
-                <div class="text-content">
-                    <h3>Malevo</h3>
-                    <p>300 gr. de un corte grueso de 
-                        la punta de la Punta de Anca.</p>
-                    <h6>$34.500</h6>
+            <div class="menu-content">
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Hamburguesa mini.">
+                    <div class="text-content">
+                        <h3>Hamburguesa mini.</h3>
+                        <h6>$22.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Filete de pollo junior">
+                    <div class="text-content">
+                        <h3>Filete de pollo junior.</h3>
+                        <h6>$22.000</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/img/carta/patatas bravas.jpg" alt="Salchipapas.">
+                    <div class="text-content">
+                        <h3>Salchipapas.</h3>
+                        <h6>$22.000</h6>
+                    </div>
                 </div>
             </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Medallones de cerdo en salsa Jaguar">
-                <div class="text-content">
-                    <h3>Medallones de cerdo en salsa Jaguar</h3>
-                    <p>2 medallones de cerdo 125 gr. c/u, 
-                        bañados con salsa de uchuvas y
-                        romero. Picante opcional.</p>
-                    <h6>$29.000</h6>
+        </section>
+        <!-- Adiciones -->
+        <section class="card Adiciones" data-name="Adiciones">
+            <div class="middle-text">
+                <h2>Adiciones</h2>
+                <p>¡Añade un toque especial a tu plato con nuestras irresistibles adiciones!</p>  
+            </div>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <span>Porción Papas francesas</span>
+                    <span class="price-color">$5.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Porción Yuquitas fritas</span>
+                    <span class="price-color">$5.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Papa con Sour Cream</span>
+                    <span class="price-color">$5.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Porción Arepa frita x3</span>
+                    <span class="price-color">$3.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Chorizo pequeño</span>
+                    <span class="price-color">$6.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Ensalada</span>
+                    <span>$5.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Queso Mozzarella</span>
+                    <span>$2.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Sour Cream</span>
+                    <span>$2.000</span>
+                </div>
+                <div class="menu-item">
+                    <span>Parmesano</span>
+                    <span>$2.000</span>
+                </div>
+                <div class="menu-item final">
+                    <span>Topping crocante</span>
+                    <span>$2.000</span>
                 </div>
             </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Punta de anca de cerdo">
-                <div class="text-content">
-                    <h3>Punta de anca de cerdo</h3>
-                    <p>230 gr. de corte mariposa de una 
-                        suave punta de anca de cerdo.</p>
-                    <h6>$24.000</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Costichí">
-                <div class="text-content">
-                    <h3>Costichí</h3>
-                    <p>250 gr. de corte especial 
-                        de costilla y chicharrón.</p>
-                    <h6>$24.000</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chuzo de pollo o cerdo">
-                <div class="text-content">
-                    <h3>Chuzo de pollo o cerdo</h3>
-                    <p>160 gr. de pollo o cerdo; 
-                        elige tu favorito.</p>
-                    <h6>$18.000</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Filete de pollo ">
-                <div class="text-content">
-                    <h3>Filete de pollo </h3>
-                    <p>250 gr. de un suave filete de 
-                        pechuga de pollo.</p>
-                    <h6>$22.000</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Salmón">
-                <div class="text-content">
-                    <h3>Salmón</h3>
-                    <p>Delicioso filete de salmón a la 
-                        parrilla.</p>
-                    <h6>$40.000</h6>
-                </div>
-            </div>
-
-
-        </div>
-     </section>
-     <!-- Hamburguesas -->
-     <section class="Hamburguesas" data-name="Hamburguesas">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Compartir -->
-     <section class="Compartir" data-name="Compartir">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Licores -->
-     <section class="Licores" data-name="Licores">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Bebidas -->
-     <section class="Bebidas" data-name="Bebidas">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Postres -->
-     <section class="Postres" data-name="Postres">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
-     <!-- Adiciones -->
-     <section class="Adiciones" data-name="Adiciones">
-        <div class="middle-text">
-            <h2>Entradas</h2>
-            <p>¡Empieza tu experiencia culinaria con nuestras irresistibles entradas!</p>  
-        </div>
-
-        <div class="menu-content">
-            <div class="row">
-                <img src="assets/img/carta/patatas bravas.jpg" alt="Chorizo Santarrosano">
-                <div class="text-content">
-                    <h3>Chorizo Santarrosano</h3>
-                    <p>Disfruta del mejor chorizo 
-                        santarrosano en trozos, 
-                        acompañado de limón y 
-                        arepa de mote frita.</p>
-                    <h6>$15.000</h6>
-                </div>
-            </div>
-        </div>
-     </section>
+        </section>
+    </section>
 
      <!-- footer -->
      <footer>
@@ -404,6 +472,6 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <!-- Enlace al archivo JavaScript -->
-<script src="assets/js/script.js"></script>
+<script src="assets/js/carta.js"></script>
 </body>
 </html>
